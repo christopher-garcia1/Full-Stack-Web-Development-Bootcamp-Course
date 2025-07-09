@@ -1,0 +1,19 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+} 
+
+#main-title{
+    color: red;
+    margin-top: 20px;
+}
+
+.text-content{
+    color: blue; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+} 
+
+.highlight{
+    background-color: yellow;
+}
