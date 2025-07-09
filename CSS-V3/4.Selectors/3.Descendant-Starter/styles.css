@@ -1,0 +1,20 @@
+.container p{ 
+    color: red;
+
+} 
+
+.container div p { 
+    color: orange;
+} 
+
+.container .special{ 
+    color: yellow;
+} 
+
+.container>h2{ 
+    color: purple;
+}  
+
+.container>p{
+    color: aqua;
+}

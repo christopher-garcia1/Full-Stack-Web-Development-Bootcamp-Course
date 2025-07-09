@@ -1,0 +1,17 @@
+h1,h2{ 
+    color: purple;
+}
+
+[data-priority='high']{ 
+    color: red; 
+    background-color: yellowgreen;
+} 
+
+input[type='text']{ 
+    background-color: lightblue; 
+    border-color: blue;
+} 
+
+input[type='submit']{
+    background-color: green;
+}
