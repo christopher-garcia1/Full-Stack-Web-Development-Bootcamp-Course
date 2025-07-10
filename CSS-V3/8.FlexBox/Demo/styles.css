@@ -1,37 +1,41 @@
-.container {
-  background-color: #f0f0f0;
-  height: 100vh;
-  border: 2px solid #ccc;
+.container{
+  height: 100vh; 
+  background-color: #f0f0;
+  border: 2px solid #ccc; 
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction:row; 
+  justify-content:space-around;  
   align-items: center;
-}
+  
+} 
 
-.box {
+.box{
   height: 150px;
   background-color: red;
-  margin: 10px;
-}
+  margin: 10px; 
 
-.box1 {
+} 
+
+.box1{
   background-color: green;
-  align-self: flex-end;
-  flex-grow: 2;
+  align-self: center; 
+  flex-grow: 1;
+} 
+
+.box2{
+  background-color: rebeccapurple;
+  align-self: flex-start; 
+  flex-grow: 1;
 }
 
-.box2 {
-  background-color: rebeccapurple;
-  align-self: flex-start;
-  flex-grow: 3;
-}
-.box3 {
+.box3{
   background-color: yellow;
   align-self: flex-start;
-  flex-grow: 4;
-}
-.box4 {
-  background-color: rgb(0, 8, 255);
+  flex-grow: 1;
+}  
+
+.box4{
+  background-color: blue;
   align-self: flex-end;
   flex-grow: 5;
 }
