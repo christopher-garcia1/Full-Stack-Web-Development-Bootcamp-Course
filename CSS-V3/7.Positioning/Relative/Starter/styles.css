@@ -1,0 +1,27 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    border: 2px solid black;
+    padding:20px;
+    height: 200px; 
+    position: relative;
+
+} 
+
+.box{
+    background-color: blue; 
+    color: white;
+    width: 100px; 
+    height: 100px; 
+} 
+
+.absolute{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+}
