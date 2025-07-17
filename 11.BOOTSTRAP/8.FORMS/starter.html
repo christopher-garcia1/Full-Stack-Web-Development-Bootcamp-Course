@@ -19,80 +19,89 @@
       <form>
         <!-- Text input fields -->
         <div class="mb-3">
-          <label for="firstName">First Name</label>
+          <label for="firstName" class="form-label">First Name</label>
           <input
             type="text"
             id="firstName"
             placeholder="Enter your first name"
-            required
+            required 
+            class="form-control"
           />
         </div>
         <div class="mb-3">
-          <label for="lastName">Last Name</label>
+          <label for="lastName" class="form-label">Last Name</label>
           <input
             type="text"
             id="lastName"
             placeholder="Enter your last name"
             required
-          />
+            class="form-control"
+            />
         </div>
 
         <!-- Email input -->
         <div class="mb-3">
-          <label for="emailAddress">Email Address</label>
+          <label for="emailAddress" class="form-label">Email Address</label>
           <input
             type="email"
             id="emailAddress"
             placeholder="Enter your email"
-            required
+            required 
+            class="form-control"
           />
         </div>
 
         <!-- Password input -->
         <div class="mb-3">
-          <label for="password">Password</label>
+          <label for="password" class="form-label">Password</label>
           <input
             type="password"
             id="password"
             placeholder="Create a password"
-            required
-          />
+            required 
+            class="form-control"
+           />
         </div>
 
         <!-- Checkbox group -->
         <div class="mb-3">
-          <div>
-            <input type="checkbox" id="checkUpdates" />
-            <label for="checkUpdates">Receive updates about our services</label>
+          <div class="form-check">
+            <input type="checkbox" id="checkUpdates" class="form-check-input"/>
+            <label for="checkUpdates" class="form-check-label">Receive updates about our services</label>
           </div>
         </div>
 
         <!-- Radio buttons -->
         <fieldset class="mb-3">
           <legend>Membership Type</legend>
-          <div>
+          <div class="form-check">
             <input
               type="radio"
               id="membershipStandard"
               name="membership"
-              checked
+              checked 
+              class="form-check-input"
             />
             <label for="membershipStandard">Standard</label>
           </div>
           <div>
-            <input type="radio" id="membershipPremium" name="membership" />
-            <label for="membershipPremium">Premium</label>
+            <input type="radio" 
+            id="membershipPremium" 
+            name="membership"  
+            class="form-check-input" 
+            />
+            <label for="membershipPremium" class="form-check-label">Premium</label>
           </div>
         </fieldset>
 
         <!-- File input -->
         <div class="mb-3">
-          <label for="profilePicture">Profile Picture</label>
-          <input type="file" id="profilePicture" />
+          <label for="profilePicture" class="col-form-label">Profile Picture</label>
+          <input type="file" id="profilePicture" class="form-control" />
         </div>
 
         <!-- Submit button -->
-        <button type="submit">Register</button>
+        <button type="submit" class="btn btn-danger">Register</button>
       </form>
     </div>
     <script
