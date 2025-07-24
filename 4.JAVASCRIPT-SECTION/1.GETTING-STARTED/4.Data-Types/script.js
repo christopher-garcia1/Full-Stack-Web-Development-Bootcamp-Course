@@ -1,30 +1,47 @@
-//!----PRIMITIVE DATA TYPES---
-// Number - Storing age
-const age = 25;
+//! Primitive data types
+// * Numbers
 
-// String - Storing name
-const name = "Alice";
+let age = 28;
+let price = 19.99;
 
-// Boolean - Is the user logged in?
-const isLoggedIn = false;
+console.log(typeof age);
 
-// Undefined - A variable that has been declared but not yet assigned a value
+// * Strings
+let greeting = "Good Morning";
+console.log(typeof greeting);
 
-let numOfChildren;
+// * Boolean
 
-// Null - Intentionally setting a variable to have no value
-const salary = null;
+let isStudent = true;
+console.log(typeof isStudent);
 
-//!---NON-PRIMITIVE DATA TYPES---
-// Object - Storing user data
+// * Undefined
 
-const user = {
-  firstName: "Jane",
-  lastName: "Tweneboah",
-  age: 28,
+let futureGoal;
+console.log(typeof futureGoal);
+
+// * Null
+
+let currentJob = null;
+console.log(typeof currentJob);
+// null is an object
+
+// ! Non primitive types
+
+// * Arrays
+
+let fruits = ["apple", "banna", "kiwi"];
+console.log(fruits);
+
+let mixedData = [true, 30, 199.99, "Emanuel", [1, 2, 3]];
+console.log(mixedData);
+
+// * Objects
+
+let person = {
+  firstName: "Emanual",
+  lastName: "Garcia",
+  age: 39,
 };
 
-// Array - Storing a list of numbers
-
-const mixedData = [19, "Jane", true, null, undefined, {}];
-console.log(mixedData);
+console.log(person);

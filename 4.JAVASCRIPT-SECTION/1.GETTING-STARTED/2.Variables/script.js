@@ -1,19 +1,21 @@
-//!----- Using `var`----
+console.log('hello');
 
-//Task: Storing a person's first name
+let name = 'chris'
+console.log(name); 
 
-// var firstName = "Emmanuel";
-// console.log(firstName);
+var age = 39;
+console.log(age); 
 
-//!-----Using `let`----
+const birthMonth = 'April';
+console.log(birthMonth);
 
-//Task: Storing a person's first name
 
-// let firstName = "Emmanuel";
-// console.log(firstName);
-//!-----Using `const`----
+let county; 
+county = 'United States' 
 
-//Task: Storing a person's first name
+console.log(county);
 
-const firstName = "Emmanuel";
-console.log(firstName);
+
+let firstName = 'Chris', lastName = 'Garcia', age1 = 39 
+console.log(firstName,lastName,age1);
+
