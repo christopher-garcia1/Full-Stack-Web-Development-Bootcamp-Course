@@ -1,185 +1,135 @@
-//----
-//Syntax of  Function declaration
-//----
-//calling the function/invoke/use the function
-// sayHello()
-//say hello
-// function sayHello(){
-//     //logic goes here
-//     //write any logic
-//     console.log('Hello world');
+// ! Steps of creating and using a function
+
+// ! Define the function (declared)
+// function addNumbers() {
+//   // write our code
+//   // ! Write our code in the function
+//   let a = 10;
+//   let b = 20;
+//   console.log('This is my function')
+//   let results = a + b
+//   console.log(results);
+  
+// }
+// // ! CAll use the function (function invocation)
+// addNumbers()
+// Function parameters
+// function addNumbers(a,b) {
+//   console.log(a);
+//   console.log(b);
+  
+  
+//   // let a = 10;
+//   // let b = 20;
+//   let results = a + b;
+//   console.log(results);
+//   alert(results)
+  
 // }
 
-//greeting
-// function greetings(){
-//     console.log('Welcome to Masynctech');
-// }
-//invoke
-// greetings()
-//show date
-function showDate() {
-  const currentDate = new Date();
-  console.log(`Todays date is ${currentDate}`);
-}
-//invoke
-// showDate()
+// addNumbers(10, 20)
+// ! Return keyword
 
-//---
-//Function expression
-//---
-
-//invoke
-// sayHello()
-
-const sayHello = function () {
-  console.log("Hello world");
-};
-
-// const greetings = function () {
-//   console.log("Welcome to Masynctech");
-// };
-
-//invoke
-//  greetings()
-
-//Determines if a fixed number (e.g., 4) is even or odd.
-const checkEvenOrOdd = function () {
-  const number = 5;
-  if (number % 2 === 0) {
-    console.log("This is an even number");
-  } else {
-    console.log("This is an odd number");
-  }
-};
-
-//checkEvenOrOdd();
-
-//---
-// Anonymous functions
-//--
-
-// function(){
-//     console.log('Weclome');
+// function addNumbers(a,b) {
+//   console.log(a);
+//   console.log(b);
+  
+  
+//   // let a = 10;
+//   // let b = 20;
+//   let results = a + b;
+//   return results
+  
 // }
 
-//--
-//Immediately Invoked Function Expression (IIFE)
-//
+// let ans = addNumbers(10, 20)
+// console.log(ans);
 
-(function () {
-  //   console.log("Weclome");
-})();
+// ! Function expression
+// const addNumbers = function (a,b) {
+//   let results = a + b;
+//   return results
+  
+// }
 
-// Calculating Square of a Number
-(function () {
-  const num = 5;
-  const square = num * num;
-  //   console.log(square);
-})();
 
-//Concatenating Strings
+// let ans = addNumbers(10, 20)
+// console.log(ans);
 
-(function () {
-  const str1 = "Hello";
-  const str2 = "World";
-  const result = str1 + " " + str2;
-  //   console.log(result);
-})();
 
-//--
-//Function parameters vs arguments
-//--
-//DRY = Don't repeat yourself
-const greetings = function (name, age) {
-  //   console.log(name);
-  //   console.log(age);
-  console.log(`Welcome ${name} your age is:${age} years`);
-};
+// ! Arrow function
 
-// greetings("Emma", 27);
-// greetings("Alice", 24);
+// const addNumbers = (a, b) => {
+//   let results = a + b;
+//   return results
+  
+// }
+// const addNumbers = (a, b) => a + b;
+// let ans = addNumbers(10, 20)
+// console.log(ans);
 
-//function to add any two numbers
+// const otherNumbers = (a, b) => {
+//   let ans = a + b
+//   return ans
+// }
 
-const addTwoNumbers = function (a, b) {
-  const result = a + b;
-  console.log(result);
-};
+// console.log(otherNumbers(5, 15));
 
-// addTwoNumbers(9000, 111);
+// const againWithNumbers = (a, b) => a + b
 
-//---
-// Default parameters
-//
+// console.log(againWithNumbers(50,60));
 
-//Basic Default Parameters
+// ! anonymous function
 
-const greet = function (name = "Guest", age = 17) {
-  console.log(`Hello, my name is ${name}, and I am ${age} years old`);
-};
+  // (function (a, b) {
+  //   let results = a + b;
+  //   console.log(results);
+    
+  // })(5, 19); 
 
-// greet("Emma", 30);
-//Default Parameters with Expression
+  // ((a, b) => { let results = a + b; console.log(results);
+  // })(5,5) 
+// !simple calc
 
-const multiply = function (a, b = a * 2) {
-  const result = a * b;
-  // console.log(`The Result is ${result}`);
-};
+// const add = (a, b) => a + b; 
+// const subtract = (a, b) => a - b; 
+// const multiply = (a, b) => a * b;
+// const divide = (a, b) => a / b; 
 
-// const myFnCall = multiply(2);
+// console.log(add(10,2));
+// console.log(subtract(10, 2)); 
+// console.log(multiply(10, 2));
+// console.log(divide(10, 2)); 
 
-// console.log(myFnCall);
+// ! Character tool
+// const length = (a) => a.length;  
+// const uppercase = (arg) => arg.toUpperCase()
+// const lowercase = (arg) => arg.toLowerCase()
+// console.log(length('hello'));
+// console.log(uppercase('hello'));
+// console.log(lowercase('HKkkh'));
 
-//---
-//Return Statement
-//--
-//Basic Return Statement
-const add = function (a, b) {
-  const result = a + b;
-  // console.log("Before return");
-  // console.log("After the return");
-  return result;
-};
-
-const addResult = add(2, 2);
-
-// console.log(addResult);
-
-// Return Statement with Conditionals
-function isEven(num) {
-  if (num % 2 === 0) {
-    return "It is an even number";
-  } else {
-    return "It is not an even number";
+const studentGrading = (points,totalPoints) => {
+  let passed = points >= totalPoints * 0.5;
+  let exceptionally = points >= totalPoints * 0.8; 
+  // * got a little ahead of myself
+  // if (passed && exceptionally) {
+  //   return 'Congratulations you passed exceptionally '
+  // } else if (passed  && !exceptionally) {
+  //   return 'Congratulations you passed'
+  // } else {
+  //   return 'You failed'
+  // } 
+  return { 
+    passed,
+    exceptionally
   }
-}
+} 
 
-// console.log(isEven(3));
-//--
-//Function Scope
-//--
 
-// Local Variable in Function
 
-function showLocalVariable() {
-  const localVar = "I am a local variable";
-}
-// console.log(localVar);
-// showLocalVariable();
+console.log(studentGrading(100, 100));
+console.log(studentGrading(75, 100)); 
+console.log(studentGrading(9,100));
 
-// Variable in Outer and Inner Function
-const globalVar = "I am a global variable";
 
-function outerFn() {
-  const outerVar = " I am an outer variable";
-
-  function innerFn() {
-    const innerVar = "I am an inner variable";
-    console.log(outerVar);
-  }
-  innerFn();
-}
-
-outerFn();
-
-console.log(globalVar);
