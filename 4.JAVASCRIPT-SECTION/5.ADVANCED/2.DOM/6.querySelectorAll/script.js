@@ -1,28 +1,16 @@
-// Select all product cards
-const productCardEls = document.querySelectorAll(".product-card");
+//  select all product cards
 
-// Extract and log names of all products
-const productNameEls = document.querySelectorAll(".product-name");
+const productCardEl = document.querySelectorAll('.product-card');
+console.log(productCardEl);
 
-productNameEls.forEach((el) => {
-  // console.log(el.innerHTML);
-});
+const productNameEl = document.querySelectorAll('.product-name'); 
 
-// Select and log all prices of laptop category products
-const laptopPricesEl = document.querySelectorAll(
-  '[data-category="laptop"] .product-price'
-);
+productNameEl.forEach((el) => console.log(el.innerHTML)
+) 
+ 
+const laptopPriceEl = document.querySelectorAll('[data-category = "laptop"] .product-price')
 
-// console.log(laptopPricesEl);
-
-laptopPricesEl.forEach((el) => {
-  //console.log(el.textContent);
-});
-
-// Select all products with a rating above 4.6
-
-const highestRatingsEl = document.querySelectorAll(
-  '[data-rating="4.7"], [data-rating="4.8"]'
-);
-
-highestRatingsEl.forEach((el) => console.log(el.innerHTML));
+laptopPriceEl.forEach((el) => console.log(el.innerHTML)
+) 
+ 
+const productCardArr = Array.from(productCardEl) 

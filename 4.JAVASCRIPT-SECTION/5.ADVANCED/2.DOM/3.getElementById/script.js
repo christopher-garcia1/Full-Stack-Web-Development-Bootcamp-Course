@@ -1,17 +1,19 @@
 //----
 //Selecting elements using getElementById
 //---
-const conferenceTitleEl = document.getElementById("conferenceTitle");
-const conferenceDateEl = document.getElementById("conferenceDate");
-const locationTitleEl = document.getElementById("locationTitle");
-const conferenceLocationEl = document.getElementById("conferenceLocation");
-const speakersTitleEl = document.getElementById("speakersTitle");
-const speakerListEl = document.getElementById("speakerList");
-console.log({
-  conferenceTitleEl,
-  conferenceTitleEl,
-  locationTitleEl,
-  conferenceLocationEl,
-  speakersTitleEl,
-  speakerListEl,
-});
+console.log(document);
+
+const conferenceTitleEl = document.getElementById('conferenceTitle') 
+const conferenceDateEl = document.getElementById('conferenceDate')
+const conferenceLocationEl = document.getElementById('conferenceLocation') 
+const locationTitleEl = document.getElementById('locationTitle')
+const speakersTitleEl = document.getElementById('speakersTitle')
+const speakersListEl = document.getElementById('speakersList')
+
+console.log(
+    conferenceTitleEl,
+    conferenceTitleEl, 
+    conferenceLocationEl, 
+    speakersTitleEl,
+    speakersListEl
+);
