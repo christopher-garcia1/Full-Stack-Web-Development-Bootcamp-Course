@@ -4,9 +4,15 @@
 const eligibility = document.getElementById("checkButton");
 
 eligibility.addEventListener("click", () => {
-  const ageEl = Number(document.getElementById("ageInput").value);
+  const ageEl = parseInt(document.getElementById("ageInput").value);
   let result = document.getElementById("result");
   result.innerHTML = "";
+  
+  if (isNaN(ageEl) || ageEl < 0 ) {
+    alert('Please input your age') 
+    return
+  }
+
 
   if (ageEl >= 21) {
     result.innerHTML += "You are old enough to drink </br>";
@@ -25,4 +31,5 @@ eligibility.addEventListener("click", () => {
   } else {
     result.innerHTML += "You are not old enough to drive </br>";
   }
+
 });
