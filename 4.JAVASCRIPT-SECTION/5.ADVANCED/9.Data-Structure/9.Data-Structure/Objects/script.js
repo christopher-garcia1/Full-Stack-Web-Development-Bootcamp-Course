@@ -99,3 +99,42 @@ const userAddress = user.address.country.name
 // bracket notation
 const countryName = user['address']['country']['name']
 console.log(countryName);
+
+
+// ! Objects in an array 
+
+const usersObj = [
+  {
+    name: 'Alice',age:30,city:'New York',
+  },
+  {
+    name: 'Bob',age:25,city:'Sans',
+  },
+  {
+    name: 'Charlie',age:26,city:'Chicago'
+  }
+] 
+console.log(usersObj);
+
+
+// ! Accesing properties 
+
+const firstUser = usersObj[1] 
+const secondUser = usersObj[2]
+
+console.log(firstUser,secondUser);
+
+// ! add new user 
+
+usersObj.push({ name: 'David', age: 50, city: 'Miami' })
+
+console.log(usersObj);
+
+
+// modify object
+
+const aliceData = usersObj[0]
+
+aliceData.name = 'Jen'
+
+console.log(usersObj);
