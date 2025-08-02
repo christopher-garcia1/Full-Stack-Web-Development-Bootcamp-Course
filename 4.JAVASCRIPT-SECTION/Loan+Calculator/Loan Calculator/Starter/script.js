@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
       resultMonthly.textContent = monthly;
       resultPayment.textContent = total;
       resultInterest.textContent = totalInterest;
-      animateValue(resultMonthly, 0, monthly, 1000);
-      animateValue(resultPayment, 0, total, 1000);
-      animateValue(resultInterest, 0, totalInterest, 1000);
+      animateValue(resultMonthly, 0, monthly,   500);
+      animateValue(resultPayment, 0, total, 500);
+      animateValue(resultInterest, 0, totalInterest, 500);
     }
   };
 
@@ -57,6 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(update);
   };
 
-  // event listner for button
+  // event listener for button
   btn.addEventListener("click", calculateLoan);
 });
