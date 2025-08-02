@@ -10,15 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // event listeners
     increase.addEventListener('click', () => {
         counter++
-        display.textContent = counter
+        updateCounter()
     })
     decrease.addEventListener('click', () => {
         counter--
-        display.textContent = counter
+        updateCounter()
     })
     reset.addEventListener('click', () => {
         counter = 0
-        display.textContent = 0
-    })
+        updateCounter()
+    }) 
+    const updateCounter = () => display.textContent = counter
 
 })
