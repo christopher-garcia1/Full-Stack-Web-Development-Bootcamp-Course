@@ -19,7 +19,7 @@ const calculateTip = () => {
   const tipPerPersonResult = tipResult / people;
 
   // secure valid inputs
-  if (isNaN(bill) || isNaN(rating) || isNaN(people) || people <= 0) {
+  if (isNaN(bill) || isNaN(rating) || isNaN(people) || people <= 0 || bill <= 0) {
     alert("Please enter valid numbers and ensure people > 0");
     return;
   }
