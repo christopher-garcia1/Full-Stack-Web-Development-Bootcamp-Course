@@ -19,6 +19,6 @@ calculateBtn.addEventListener('click', () => {
     
   
 
-    percentageResult.innerText = percent.toFixed(2)
-    finalResult.innerText = final.toFixed(2)
+    percentageResult.innerText = '$' + percent.toFixed(2)
+    finalResult.innerText = '$' + final.toFixed(2)
 })
