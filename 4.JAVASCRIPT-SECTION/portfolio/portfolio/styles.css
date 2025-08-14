@@ -10,7 +10,8 @@
     --secondary-color:#4338ca;
     --text-color:#1f2937;
     --gradient-start:#4f46e5;
-    --gradient-end:#7c3aed;
+    --gradient-end:#7c3aed; 
+    --light-color:#f3f4f6;
 } 
 /* nav */
 .navbar{
@@ -75,6 +76,10 @@
     display: none;
 }
 
+
+/* Header */
+
+
 .header{
     min-height: 100vh;
     display: flex;
@@ -124,6 +129,8 @@
         background: linear-gradient(to right, var(--gradient-end),var(--gradient-start));
 } 
 
+/* About me */
+
 
 .about{
     padding: 6rem 2rem; 
@@ -165,4 +172,105 @@
     display: inline-block; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+/* My Skills */
+
+
+.skills{
+    padding: 6rem 2rem; 
+    background: var(--light-color);
+} 
+
+.skills-content{
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-top: 3rem;
+} 
+
+.skill-card{
+    flex: 1; 
+    min-width: 250px; 
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    align-items: center;
+} 
+
+.skill-card i{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+} 
+
+
+/* Works */
+
+.works{
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.works-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.works-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin-bottom: 3rem;
+}
+
+.works-card{
+    flex: 1;
+    min-width: 300px;
+    background: var(--light-color);
+    border-radius: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.works-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+} 
+
+.works-card img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.work-info{
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-info h3{
+    margin-bottom: 0.5rem;
+}
+
+.work-links { 
+    
+    margin-top: 1rem;
+}
+
+.work-links a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
 }
