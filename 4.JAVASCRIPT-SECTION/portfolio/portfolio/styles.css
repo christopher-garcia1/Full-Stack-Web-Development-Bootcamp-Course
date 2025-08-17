@@ -239,7 +239,7 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+
 }
 
 .works-card:hover{
@@ -265,7 +265,7 @@
 }
 
 .work-links { 
-    
+    text-align: center;
     margin-top: 1rem;
 }
 
@@ -273,4 +273,114 @@
     text-decoration: none;
     color: var(--primary-color);
     font-size: 1.2rem;
+}
+
+
+/* Contacts */
+
+.contacts{
+    padding: 6rem 2rem;
+    background: var(--light-color);
+}
+
+.contact-content{
+    max-width: 800px;
+    margin: 0 auto;
+} 
+
+.contact-form{
+    background: white;
+    padding: 2rem;
+    border: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 0.7rem; 
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5;
+    resize: none;
+    font-size: 1rem;
+}
+
+.submit-btn{
+    min-width: 82px;
+    background: var(--primary-color); 
+    margin: 0 auto;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover{
+    background: var(--secondary-color);
+}
+
+.footer{
+    background: var(--text-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links{
+    margin-top: 1rem;
+}
+
+.social-links a{
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: var(--primary-color);
+}
+
+
+/* Responsive */
+@media(max-width:780px){
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column; 
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
 }
