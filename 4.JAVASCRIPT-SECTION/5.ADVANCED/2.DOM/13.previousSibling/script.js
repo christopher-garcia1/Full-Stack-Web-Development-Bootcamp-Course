@@ -1,17 +1,17 @@
 //select buttons
-const button1El = document.getElementById("button1");
-const button2El = document.getElementById("button2");
-
+const btnOne = document.getElementById("button1");
+const btnTwo = document.getElementById("button2");
 //use previousSibling to get the preceeding paragraph element
-const text1El = button1El.previousSibling;
-const text2El = button2El.previousSibling;
+const paragraphOne = btnOne.previousSibling;
+const paragraphTwo = btnTwo.previousSibling;
 
 //change the text content of the preceeding paragraph
 
-if (text1El.nodeType === 3) {
-  text1El.textContent = "Text 1 has been updated";
-}
+if (paragraphOne.nodeType === 3)
+  paragraphOne.textContent = "Text has been updated "
 
-if (text2El.nodeType === 3) {
-  text2El.textContent = "Text 2 has been changed";
-}
+if (paragraphTwo.nodeType === 3) paragraphTwo.textContent = 'Text 2 has been updated '
+
+console.log(btnOne);
+console.log(btnTwo);
+console.log(paragraphOne);

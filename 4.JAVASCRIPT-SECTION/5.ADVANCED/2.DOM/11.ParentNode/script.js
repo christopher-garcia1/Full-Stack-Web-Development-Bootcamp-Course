@@ -1,12 +1,17 @@
 //Step 1: Select a list item using data attribute
-const selectedItemEl = document.querySelector('[data-item="fruit"]');
+const fruitEl = document.querySelector('[data-item=fruit]')
 
 // Step 2: Navigate to the parent <ul> element
-const parentListEl = selectedItemEl.parentNode;
+const parentEl = fruitEl.parentNode
 
 // Step 3: Navigate to grandparent
-const grandparentParentEl = parentListEl.parentNode;
+const grandparentEl = parentEl.parentNode
 
 // Step 4: Navigate to great- grandparent
-const greatGrandParentEl = grandparentParentEl.parentNode;
-console.log(greatGrandParentEl);
+const greatGrandParent = grandparentEl.parentNode
+
+
+console.log(parentEl);
+console.log(grandparentEl);
+console.log(greatGrandParent);
+
