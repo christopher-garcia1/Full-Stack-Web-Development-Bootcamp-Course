@@ -1,50 +1,49 @@
 //select the p element
 const p = document.getElementById("textElement");
-// p.classList.add("highlight", "bold", "italic");
+
 // p.classList.add("bold");
 // p.classList.add("italic");
-
-//function to add class
-function addClass() {
+const addClass = () => {
   p.classList.add("highlight", "bold", "italic");
 }
 
-//removeClass
-function removeClass() {
+//function to add class
+
+//removeClass 
+const removeClass = () => {
   p.classList.remove("highlight", "bold", "italic");
 }
 
 //toggleClass
-function toggleClass() {
+
+const toggleClass = () => {
+  p.classList.toggle("highlight")
+  p.classList.toggle("bold"); 
   p.classList.toggle("italic");
 }
 
 //checkContains
-function checkContains() {
+
+const checkContains = () => {
   alert(
-    p.classList.contains("highlight")
+    p.classList.contains('highlight') 
       ? "Contains Highlight"
-      : "Does not not contain Higlight"
-  );
+      : "Does not contain Highlight"
+  )
 }
 
-//replaceClass
+//replaceClass 
+const replaceClass = () => 
+  // ! short circuit evaluation 
+    p.classList.contains('italic') && p.classList.replace('italic', 'red-text') 
+  
+  
 
-function replaceClass() {
-  if (p.classList.contains("italic")) {
-    p.classList.replace("italic", "red-text");
-  } else {
-    p.classList.add("red-text");
-  }
+
+//listItem  
+const listItem = () => {
+  p.classList.item(0) ? alert(`The first class is:  ${p.classList.item(0)}`) : alert('There are no modified classes!')
 }
 
-//listItem
-
-function listItem() {
-  alert("The first clas is:" + p.classList.item(0));
-}
 
 //getValue
-function getValue() {
-  console.log(p.classList.value);
-}

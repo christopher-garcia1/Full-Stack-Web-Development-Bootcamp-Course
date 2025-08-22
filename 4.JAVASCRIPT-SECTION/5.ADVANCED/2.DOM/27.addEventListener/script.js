@@ -1,50 +1,26 @@
-//-----Mouse Event-----
+// ! mouse events
 
-function addEvent() {
-  console.log("Click event is called");
-}
-document.getElementById("clickButton").addEventListener("click", addEvent);
+document.getElementById('clickButton').addEventListener('click', () => {console.log('button was clicked');
+}) 
 
-document
-  .getElementById("doubleClickButton")
-  .addEventListener("dblclick", (e) => {
-    console.log(e);
-    // console.log("dbClickHandler event is called");
-    // console.log(this);
-  });
 
-document.getElementById("hoverDiv").addEventListener("mouseover", function () {
-  console.log("onMouseOverHandler event is called");
-});
+document.getElementById('doubleClickButton').addEventListener('dblclick',() => {console.log('btn was double clicked');
+})
 
-document.getElementById("hoverDiv").addEventListener("mouseout", function () {
-  console.log("onMouseOutHandler event is called");
-});
+// *key press vents
 
-//-----Keyboard Event-----
 
-document.getElementById("keyInput").addEventListener("keydown", function () {
-  console.log("onkeydownHandler event is called");
-});
+document.getElementById('hoverDiv').addEventListener('mouseover',() => {console.log('mouse in');
+})
 
-document.getElementById("keyInput").addEventListener("keyup", function () {
-  console.log("onkeyupHandler event is called");
-});
+document.getElementById('hoverDiv').addEventListener('mouseout',() => {console.log('mouse out');
+})
 
-document.getElementById("keyInput").addEventListener("keypress", function () {
-  console.log("onkeypressHandler event is called");
-});
+document.getElementById('keyInput').addEventListener('keydown',() => {console.log('keydown was initiateds');
+}) 
 
-//-----Form Events-----
+//? form events
 
-document.getElementById("myForm").addEventListener("submit", function () {
-  console.log("onsubmitHandler event is called");
-});
-
-document.getElementById("formInput").addEventListener("focus", function () {
-  console.log("onfocusHandler event is called");
-});
-
-document.getElementById("formInput").addEventListener("blur", function () {
-  console.log("onblurHandler event is called");
-});
+document.getElementById('myForm').addEventListener('submit', () => {
+  console.log('submit was initiated');
+})

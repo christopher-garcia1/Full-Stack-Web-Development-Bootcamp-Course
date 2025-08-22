@@ -1,28 +1,14 @@
-//Add event listener to the outer div
-document.getElementById("outerDiv").addEventListener(
-  "click",
-  function (event) {
-    alert("Outer Div Clicked! Event Phase" + event.eventPhase);
-  },
-  false
-); //Bubbling phase
+document.getElementById('outerDiv').addEventListener('click', (event) => {
+  alert(`Outer Div has been clicked! Event Phast: ${event.eventPhase}`)
+})
 
-// Add event listener to the middle div
-document.getElementById("middleDiv").addEventListener(
-  "click",
-  function (event) {
-    alert("Middle Div Clicked! Event Phase" + event.eventPhase);
-    event.stopPropagation(); //stop the event propagation
-  },
-  false
-); //Bubbling phase
 
-// Add event listener to the innder div
-document.getElementById("innerDiv").addEventListener(
-  "click",
-  function (event) {
-    alert("Inner Div Clicked! Event Phase" + event.eventPhase);
-    event.stopPropagation(); //stop the event propagation
-  },
-  false
-); //Bubbling phase
+document.getElementById('middleDiv').addEventListener('click', (event) => {
+  alert(`Middle Div has been clicked! Event Phase: ${event.eventPhase}`)
+
+})
+
+document.getElementById('innerDiv').addEventListener('click', (event) => {
+  alert(`innerDiv Div has been clicked! Event Phase: ${event.eventPhase}`)
+
+} )
